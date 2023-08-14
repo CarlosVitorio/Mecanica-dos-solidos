@@ -72,7 +72,8 @@ function Calcular() {
 
     // Etapa 4
     var sig_X =
-      (((ep_X * 10 ** -6 + 0.35 * (ep_Y * 10 ** -6)) / (1 - Poison ** 2)) * E) /
+      (((ep_X * 10 ** -6 + Poison * (ep_Y * 10 ** -6)) / (1 - Poison ** 2)) *
+        E) /
       10 ** 6;
     var sig_Y =
       (((Poison * (ep_X * 10 ** -6) + ep_Y * 10 ** -6) / (1 - Poison ** 2)) *
@@ -165,7 +166,8 @@ function Calcular() {
 
     // Etapa 4
     var sig_X =
-      (((ep_X * 10 ** -6 + 0.35 * (ep_Y * 10 ** -6)) / (1 - Poison ** 2)) * E) /
+      (((ep_X * 10 ** -6 + Poison * (ep_Y * 10 ** -6)) / (1 - Poison ** 2)) *
+        E) /
       10 ** 6;
     var sig_Y =
       (((Poison * (ep_X * 10 ** -6) + ep_Y * 10 ** -6) / (1 - Poison ** 2)) *
