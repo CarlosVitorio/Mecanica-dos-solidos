@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROSETA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ROSETA</h1>
+      <p>Produzido por Carlos Vitório</p>
+    </header>
+
+    <main>
+      <div class="Ang-roseta">
+        <div class="Ang-45">
+          <span>roseta de 45°</span>
+          <input
+            type="radio"
+            name="roseta"
+            id="45"
+            value="45"
+            onclick="VerificarRoseta('45')"
+            required
+          />
+          <img
+            src="data:image/png;base64,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"
+            alt="roseta de 45"
+          />
+        </div>
+        <div class="Ang-60">
+          <span>roseta de 60°</span>
+          <input
+            type="radio"
+            name="roseta"
+            id="60"
+            value="60"
+            onclick="VerificarRoseta('60')"
+            required
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZM0KCrqbvhsqNuMm_djZN0WxiwQLSGP6bMOCganghX7kGg4Ko_HAGuG13TtaF1Ja8L8&usqp=CAU"
+            alt="roseta de 60"
+          />
+        </div>
+      </div>
+
+      <div class="valores">
+        <h2>Informe os valores:</h2>
+        <div class="def">
+          <div class="container">
+            <span>εa:</span>
+            <input
+              type="text"
+              id="ep_A"
+              placeholder="Digite o valor de A"
+              required
+            />
+          </div>
+          <div class="container">
+            <span>εb:</span>
+            <input
+              type="text"
+              id="ep_B"
+              placeholder="Digite o valor de B"
+              required
+            />
+          </div>
+          <div class="container">
+            <span>εc:</span>
+            <input
+              type="text"
+              id="ep_C"
+              placeholder="Digite o valor de C"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="material">
+          <select name="material" id="material">
+            <option value="0">Escolha o Material</option>
+            <option value="1">Aço A-36</option>
+            <option value="2">Aluminio</option>
+            <option value="3">sla1</option>
+            <option value="4">sla2</option>
+            <option value="5">sla3</option>
+          </select>
+        </div>
+      </div>
+
+      <button onclick="Calcular()"><a href="#resultados">Calcular</a></button>
+    </main>
+
+    <div class="resultados" id="resultados">
+      <div class="etapa">
+        <h1>deformação associadas ao eixo X e Y</h1>
+      </div>
+      <div class="container-ep">
+        <div class="epson-x" id="epson-x">
+          <span>εx</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-x">vazio</span>
+          </div>
+        </div>
+        <div class="epson-y" id="epson-y">
+          <span>εy</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-y">vazio</span>
+          </div>
+        </div>
+        <div class="cisalhamento" id="cisalhamento">
+          <span>γxy</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-xy">vazio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="etapa">
+        <h1>deformação principais no plano</h1>
+      </div>
+      <div class="container-epmax">
+        <div class="epson-med" id="epson-med">
+          <span>εmed</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-ep_MED">vazio</span>
+          </div>
+        </div>
+        <div class="raio" id="raio">
+          <span>raio</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-raio">vazio</span>
+          </div>
+        </div>
+        <div class="ep_MAX" id="ep_MAX">
+          <span>εx'</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-ep_MAX">vazio</span>
+          </div>
+        </div>
+        <div class="ep_MIN" id="ep_MIN">
+          <span>εy'</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-ep_MIN">vazio</span>
+          </div>
+        </div>
+        <div class="ang-princ" id="ang-princ">
+          <span>Angulo</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-ang-prin">vazio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="etapa">
+        <h1>deformação por cisalhamento máximo</h1>
+      </div>
+      <div class="container-epmax">
+        <div class="epson-med" id="epson-med">
+          <span>εmed</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-ep_MED_cisa">vazio</span>
+          </div>
+        </div>
+        <div class="raio" id="raio">
+          <span>γx'y'</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-raio-XY">vazio</span>
+          </div>
+        </div>
+        <div class="ang-princ" id="ang-princ">
+          <span>Angulo</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-ang-cisa">vazio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="etapa">
+        <h1>tensão no ponto associadas aos eixos X e Y</h1>
+      </div>
+      <div class="container-epmax">
+        <div class="poison" id="poison">
+          <span>Poison</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-poison">vazio</span>
+          </div>
+        </div>
+        <div class="tau" id="tau">
+          <span>Tau_xy</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-tau">vazio</span>
+          </div>
+        </div>
+        <div class="sig-x" id="sig-x">
+          <span>σx</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-sig-x">vazio</span>
+          </div>
+        </div>
+        <div class="sig-y" id="sig-y">
+          <span>σy</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-sig-y">vazio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="etapa">
+        <h1>tensões principais</h1>
+      </div>
+      <div class="container-epmax">
+        <div class="sig-med" id="sig-med">
+          <span>σmed</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-sig-med">vazio</span>
+          </div>
+        </div>
+        <div class="raio" id="raio">
+          <span>raio</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-raio-sig">vazio</span>
+          </div>
+        </div>
+        <div class="sig-x-l" id="sig-x-l">
+          <span>σx'</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-sig-x-l">vazio</span>
+          </div>
+        </div>
+        <div class="sig-y-l" id="sig-y-l">
+          <span>σy'</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-sig-y-l">vazio</span>
+          </div>
+        </div>
+        <div class="sig-ang" id="sig-ang">
+          <span>angulo</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-sig-ang">vazio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="etapa">
+        <h1>tensão de cisalhamneto maxima</h1>
+      </div>
+      <div class="container-epmax">
+        <div class="poison" id="poison">
+          <span>Angulo</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-ang-cisa-tau">vazio</span>
+          </div>
+        </div>
+        <div class="tau-l" id="tau-l">
+          <span>Tau_x'y'</span>
+          <div class="espaco">
+            <span class="vazio" id="vazio-tau-l">vazio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

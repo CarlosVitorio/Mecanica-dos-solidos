@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  min-height: 10px;
+  min-width: 10px;
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+body {
+  background-color: rgb(100, 100, 100);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 150%;
+  color: rgb(255, 255, 255);
+  margin-bottom: 6.5%;
+}
+
+@media screen and (max-width: 450px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    margin-bottom: 25%;
+  }
+
+  .resultados {
+    margin-top: 30%;
+  }
+
+  bottom {
+    max-width: 100px;
+    max-height: 100px;
+    height: 100px;
+    width: 100px;
+    min-height: 100px;
+    min-width: 100px;
+  }
+}
+
+main {
+  color: rgb(0, 255, 255);
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 73.4vh;
+  width: 100vw;
+}
+
+main .Ang-roseta {
+  display: flex;
+  max-width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.Ang-45,
+.Ang-60 {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px white;
+  border-radius: 5%;
+}
+
+.valores {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.def {
+  display: flex;
+  gap: 10px;
+  font-size: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.valores .container input {
+  padding-left: 3px;
+}
+
+.material select {
+  border: solid 1px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  max-width: 100%;
+  text-align: center;
+}
+
+button {
+  min-height: 10px;
+  min-width: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  height: 25px;
+  width: 100px;
+  border: solid 1px rgb(0, 255, 255);
+  border-radius: 10px;
+}
+
+button a {
+  color: rgb(0, 0, 0);
+  padding: 5px 25%;
+}
+
+.resultados {
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(100, 100, 100);
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  font-size: 115%;
+}
+
+.etapa {
+  color: rgb(0, 255, 255);
+  font-size: 80%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.container-ep,
+.container-epmax {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.epson-x,
+.epson-y,
+.cisalhamento,
+.epson-med,
+.raio,
+.ep_MAX,
+.ep_MIN,
+.ang-princ,
+.tau,
+.poison,
+.sig-x,
+.sig-y,
+.sig-med,
+.sig-x-l,
+.sig-y-l,
+.tau-l,
+.sig-ang {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  color: rgb(0, 255, 255);
+  gap: 3px;
+}
+
+.vazio {
+  color: rgb(0, 0, 0);
+}
+
+.espaco {
+  background-color: rgb(255, 255, 255);
+  padding: 0% 70px;
+}
